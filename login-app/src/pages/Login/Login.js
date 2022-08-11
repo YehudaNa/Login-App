@@ -6,12 +6,28 @@ export default function Login() {
   return (
     <>
       <Box sx={styles.Login}>
-        <Typography sx={styles.LoginText}>Login</Typography>
-        <Box component="form">
-          <TextField id="outlined" label="First Name" />
-          <TextField id="outlined" label="Last Name" />
-          <TextField id="outlined" label="Email" />
-          <TextField id="outlined" label="Password" />
+        <Box sx={styles.Form} component="form">
+          <Typography sx={styles.LoginText}>Login</Typography>
+          <TextField label="Email" />
+          <TextField label="Password" />
+          <Button
+            style={{
+              minWidth: "52%",
+              minHeight: "50px",
+            }}
+            variant="contained"
+          >
+            Login
+          </Button>
+          <Button
+            style={{
+              minWidth: "52%",
+              minHeight: "50px",
+            }}
+            variant="contained"
+          >
+            Register
+          </Button>
         </Box>
       </Box>
     </>
